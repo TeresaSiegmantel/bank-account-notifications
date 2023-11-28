@@ -10,7 +10,6 @@ from common_types import Account, Booking, Notifier
 
 
 class MockAccount(Account):
-
     @staticmethod
     def _fetch_bookings(_newer_than: dt.datetime) -> Iterable[Booking]:
         return [
@@ -25,10 +24,8 @@ class MockAccount(Account):
                 transfer_entity="Work GmbH",
             ),
             Booking(
-                direction="out",
-                amount=Decimal("1336"),
-                transfer_entity="Landlord"
-            )
+                direction="out", amount=Decimal("1336"), transfer_entity="Landlord"
+            ),
         ]
 
     fetch_bookings = Mock(wraps=_fetch_bookings)
@@ -40,7 +37,6 @@ def mock_account() -> Account:
 
 
 class MockNotifier(Notifier):
-
     @staticmethod
     def _notify(_bookings: Iterable[Booking]) -> None:
         pass

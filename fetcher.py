@@ -6,7 +6,12 @@ from common_types import Account, Notifier
 import datetime as dt
 
 
-def server_loop(account: Account, newer_than: dt.datetime, notifiers: Iterable[Notifier], config: Config = CONFIG) -> None:
+def server_loop(
+    account: Account,
+    newer_than: dt.datetime,
+    notifiers: Iterable[Notifier],
+    config: Config = CONFIG,
+) -> None:
     last_checked = newer_than
 
     while True:
