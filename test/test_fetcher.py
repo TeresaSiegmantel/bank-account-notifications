@@ -3,7 +3,7 @@ import time
 
 import datetime as dt
 
-import fetcher
+from app import fetcher
 
 
 @pytest.fixture(autouse=True)

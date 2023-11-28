@@ -1,8 +1,8 @@
 import time
 from typing import Iterable
 
-from config import Config, CONFIG
-from common_types import Account, Notifier
+from app.config import Config, CONFIG
+from app.common_types import Account, Notifier
 import datetime as dt
 
 

@@ -5,8 +5,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from config import Config
-from common_types import Account, Booking, Notifier
+from app.config import Config
+from app.common_types import Account, Booking, Notifier
 
 
 class MockAccount(Account):
