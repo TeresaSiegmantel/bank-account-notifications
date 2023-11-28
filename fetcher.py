@@ -2,7 +2,7 @@ import time
 from typing import Iterable
 
 from config import Config, CONFIG
-from types import Account, Notifier
+from common_types import Account, Notifier
 import datetime as dt
 
 
