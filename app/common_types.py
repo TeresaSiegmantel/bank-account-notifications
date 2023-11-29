@@ -12,6 +12,7 @@ class Booking:
     amount: decimal.Decimal
     # TODO: there should be a better name for that
     transfer_entity: str
+    date: dt.datetime
 
 
 class Account(ABC):
