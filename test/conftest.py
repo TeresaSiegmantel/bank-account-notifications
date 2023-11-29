@@ -17,14 +17,19 @@ class MockAccount(Account):
                 direction="out",
                 amount=Decimal("7.17"),
                 transfer_entity="Paypal",
+                date=dt.datetime(1991, 9, 9, 4, 31, 44),
             ),
             Booking(
                 direction="in",
                 amount=Decimal("1337"),
                 transfer_entity="Work GmbH",
+                date=dt.datetime(1998, 9, 9, 7, 22, 55),
             ),
             Booking(
-                direction="out", amount=Decimal("1336"), transfer_entity="Landlord"
+                direction="out",
+                amount=Decimal("1336"),
+                transfer_entity="Landlord",
+                date=dt.datetime(1666, 9, 2, 15, 11, 59),
             ),
         ]
 

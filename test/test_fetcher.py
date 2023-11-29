@@ -26,6 +26,9 @@ MOCK_NOW = dt.datetime(2022, 11, 5, 12, 00, 00)
 @pytest.fixture(autouse=True)
 def mock_datetime_now(monkeypatch) -> None:
     class MockDatetime:
+        def __init__(self, *args, **kwargs):
+            pass
+
         @staticmethod
         def now() -> dt.datetime:
             pass
