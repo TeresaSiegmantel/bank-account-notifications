@@ -18,10 +18,10 @@ class Booking:
 class Account(ABC):
     @abstractmethod
     def fetch_bookings(self, newer_than: dt.datetime) -> Iterable[Booking]:
-        raise NotImplemented
+        raise NotImplementedError
 
 
 class Notifier(ABC):
     @abstractmethod
     def notify(self, bookings: Iterable[Booking]) -> None:
-        raise NotImplemented
+        raise NotImplementedError
