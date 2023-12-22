@@ -15,6 +15,9 @@ class Config:
         # TODO: this should be configured as an interval, e.g. 1h30m
         return cast(float, self.get("check_interval"))
 
+    def get_subconfig(self, section: str) -> "Config":
+        return Config(cast(dict[str, object], self.get(section)))
+
 
 DEFAULT_CONFIG_LOCATION: Final[str] = "~/.bank_account_notifications"
 

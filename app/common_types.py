@@ -21,6 +21,11 @@ class Account(ABC):
         raise NotImplementedError
 
 
+class AccountNotFoundException(Exception):
+    def __init__(self, type_: str):
+        super().__init__(type_)
+
+
 class Notifier(ABC):
     @abstractmethod
     def notify(self, bookings: Iterable[Booking]) -> None:
