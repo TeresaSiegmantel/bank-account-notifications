@@ -1,3 +1,5 @@
+# Since regulations prohibit bank account access without 2fa as private individuals, this project is dead. 
+
 # bank-account-notifications
 
 Get a notification everytime something happens on your bank account.
